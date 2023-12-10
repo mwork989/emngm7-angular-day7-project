@@ -1,0 +1,33 @@
+
+<h2>Stock records </h2>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Stock Name</th>
+      <th scope="col">Stock Market Cap</th>
+      <th scope="col">Stock Market Sector</th>
+      <th scope="col">Release Date</th>
+      <th scope="col">Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of stockRecords; let i = index;" >
+      <td>{{ record.id }}</td>
+      <td>{{ record.stockName }}</td>
+      <td>{{ record.stockMarketCap }}</td>
+      <td>{{ record.stockMSector }}</td>
+      <td>{{ record.releaseDate }}</td>
+      <td>{{ record.symbol }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<button (click)="StartTimer()">
+    Start Timer
+  </button>
+  <button (click)="StopTimer()">
+    Stop Timer
+  </button>
+  

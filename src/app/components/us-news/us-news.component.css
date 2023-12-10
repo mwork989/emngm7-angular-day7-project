@@ -1,0 +1,29 @@
+
+
+section{
+    width:450px;
+   
+    
+    border-radius:5px;
+    padding:10px;
+    margin:10px;
+}
+
+section img{
+    height:200px;
+    width:100%;
+}
+
+section h3{
+    
+    border-radius:5px;
+    padding:10px;
+    color:white;
+}
+
+section ul{
+    
+    border-radius:5px;
+    padding:10px;
+    color:white;
+}

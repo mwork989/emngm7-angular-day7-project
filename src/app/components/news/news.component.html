@@ -1,0 +1,11 @@
+<h2>Top 10 headlines  {{title ? title : ''}}</h2>
+
+<section *ngFor="let news of newsRecords" [ngStyle]="{'background-color':bgStyle}">
+    <h3  [ngStyle]="{'background-color':headerStyle}">{{news.title}}</h3>
+    <p>{{news.content}}</p>
+    <p>{{news.description}}</p>
+    <img [src]="news.urlToImage" alt="newsimage">
+    <ul  [ngStyle]="{'background-color':headerStyle}">
+        <li>Source:{{news.source.name}}</li>
+    </ul>
+</section>
